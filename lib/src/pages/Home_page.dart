@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
 
   final myTextStyle = new TextStyle(fontSize: 25);
+  final counter = 10;
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +16,8 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text("Taps number:", style: TextStyle(fontSize: 25)),
-            Text("0", style: myTextStyle)
+            Text("Taps number:", style: myTextStyle),
+            Text('$counter', style: myTextStyle)
           ],
         )
       ),
@@ -24,6 +25,7 @@ class HomePage extends StatelessWidget {
         onPressed: (){},
         child: Icon(Icons.add),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
