@@ -10,7 +10,9 @@ class CardPage extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(10),
         children: <Widget>[
-          _cardType1()
+          _cardType1(),
+          SizedBox(height: 30.0,),
+          _cardType2()
         ],
       ),
     );
@@ -39,6 +41,27 @@ Widget _cardType1(){
             )
           ],
         )
+      ],
+    ),
+  );
+}
+
+Widget _cardType2(){
+  return Card(
+    child: Column(
+      children: <Widget>[
+        FadeInImage(
+          image: NetworkImage('https://www.capturelandscapes.com/wp-content/uploads/2017/03/DSC2441-Panorama.jpeg'),
+          placeholder: AssetImage('assets/original.gif'),
+          fadeInDuration: Duration(milliseconds: 1000),
+          height: 300.0,
+          fit: BoxFit.cover,
+        ),
+        Container(
+          padding: EdgeInsets.all(10.0),
+          child: Text("Nose que poner"),
+        )
+        
       ],
     ),
   );
