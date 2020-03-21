@@ -16,5 +16,10 @@
             "icon" : "folder_open",
             "texto": "Cards - Tarjetas"
         }
+        ,{
+            "ruta" : "inputs",
+            "icon" : "inputs",
+            "texto": "inputs"
+        }
     ]
 }

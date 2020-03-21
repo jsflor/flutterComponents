@@ -3,6 +3,7 @@ import 'package:flutterapp/src/pages/AlertPage.dart';
 import 'package:flutterapp/src/pages/AvatarPage.dart';
 import 'package:flutterapp/src/pages/CardPage.dart';
 import 'package:flutterapp/src/pages/HomePage.dart';
+import 'package:flutterapp/src/pages/InputPage.dart';
 
 Map<String, WidgetBuilder> getAppRoutes(){
   return {
@@ -10,6 +11,7 @@ Map<String, WidgetBuilder> getAppRoutes(){
     'alert': (BuildContext context) => AlertPage(),
     'avatar': (BuildContext context) => AvatarPage(),
     'card': (BuildContext context) => CardPage(),
+    'inputs': (BuildContext context) => InputPage(),
   };
 }
 
