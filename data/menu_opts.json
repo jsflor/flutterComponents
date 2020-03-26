@@ -26,5 +26,10 @@
             "icon" : "tune",
             "texto": "Sliders - Checks"
         }
+        ,{
+            "ruta" : "list",
+            "icon" : "list",
+            "texto": "Listas y Scrool"
+        }
     ]
 }

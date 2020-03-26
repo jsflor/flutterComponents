@@ -5,6 +5,7 @@ import 'package:flutterapp/src/pages/CardPage.dart';
 import 'package:flutterapp/src/pages/HomePage.dart';
 import 'package:flutterapp/src/pages/InputPage.dart';
 import 'package:flutterapp/src/pages/SliderPage.dart';
+import 'package:flutterapp/src/pages/ListViewPage.dart';
 
 Map<String, WidgetBuilder> getAppRoutes(){
   return {
@@ -14,6 +15,7 @@ Map<String, WidgetBuilder> getAppRoutes(){
     'card': (BuildContext context) => CardPage(),
     'inputs': (BuildContext context) => InputPage(),
     'slider': (BuildContext context) => SliderPage(),
+    'list': (BuildContext context) => ListaPage()
   };
 }
 
